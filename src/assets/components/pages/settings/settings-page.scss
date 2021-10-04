@@ -1,0 +1,26 @@
+@import './../../abstract';
+
+.settings {
+  &__wrapper {
+    margin-top: 47px;
+    padding: 32px 46px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1000px;
+    background-color: $lightColor;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24),
+                0px 9px 18px rgba(0, 0, 0, 0.18);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: 37px;
+    padding: 16px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}

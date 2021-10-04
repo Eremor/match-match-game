@@ -1,0 +1,11 @@
+@import "./../abstract";
+
+.header {
+  width: 100%;
+  background-color: $mainColor;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+
+  &__wrapper {
+    max-width: 1396px;
+  }
+}

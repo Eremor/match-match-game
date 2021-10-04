@@ -1,0 +1,21 @@
+@import './../../abstract';
+
+.finish-game {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    margin-top: 20px;
+    width: 328px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.25px;
+    color: $fontSecondColor;
+  }
+
+  &__btn {
+    margin: 8px 0;
+  }
+}

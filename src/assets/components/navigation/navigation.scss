@@ -1,0 +1,60 @@
+@import "./../abstract";
+
+.nav {
+  margin-left: 152px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    height: 74px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    padding: 0 10px;
+    padding-top: 48px;
+    padding-bottom: 9px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $lightColor;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 35%;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url("./../../icons/about.svg") center no-repeat;
+    }
+
+    &:nth-child(2)::before {
+      background: url("./../../icons/score.svg") center no-repeat;
+    }
+
+    &:nth-child(3)::before {
+      background: url("./../../icons/settings.svg") center no-repeat;
+    }
+
+    &:hover {
+      background-color: #1e88e5;
+    }
+
+    &--active {
+      pointer-events: none;
+      cursor: none;
+      background-color: #1e88e5;
+
+      &:hover {
+        background-color: #1e88e5;
+      }
+    }
+  }
+}

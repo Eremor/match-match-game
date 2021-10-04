@@ -1,0 +1,23 @@
+@import './../abstract';
+
+.popup {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &__overview {
+    width: 100vw;
+    height: 100vh;
+    background-color: $popupOverview;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $lightColor;
+  }
+}

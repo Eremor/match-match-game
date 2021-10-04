@@ -1,0 +1,49 @@
+@import "./../../../abstract";
+
+.description-card {
+  margin: 0;
+  margin-top: 20px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  width: 360px;
+  background-color: $lightColor;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+
+  &:first-child {
+    height: 230px;
+  }
+
+  &:nth-child(2) {
+    height: 132px;
+  }
+
+  &:nth-child(3) {
+    height: 240px;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 2.4rem;
+    line-height: 2.1rem;
+    color: $lightColor;
+    background-color: $mainColor;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+      0px 2px 4px rgba(0, 0, 0, 0.14);
+  }
+
+  &__text {
+    margin-left: 16px;
+    margin-right: 3px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.25px;
+    color: $fontSecondColor;
+  }
+}

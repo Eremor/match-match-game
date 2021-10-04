@@ -1,0 +1,42 @@
+@import './../../abstract';
+
+.game {
+  &__wrapper {
+    margin-top: 33px;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  &__timer {
+    margin-top: 28px;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 3rem;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: $lightColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+  }
+
+  &__field {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

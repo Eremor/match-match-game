@@ -1,0 +1,17 @@
+@import "./../abstract";
+
+.player {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+
+  &__icon {
+    margin-left: 30px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: url("./../../images/user.png") center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+}
